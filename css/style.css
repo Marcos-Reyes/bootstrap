@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Ms+Madi&family=Yellowtail&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+    font-family: 'BIZ UDGothic';
+}
+.body__index{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+header{
+	grid-area: header;
+    background-color: rgb(177, 92, 60);
+	background: linear-gradient(0deg, rgb(193, 110, 54) 0%, rgb(227, 227, 227) 90%);
+}
+.navbar .navbar-nav li a{
+    padding: 0.5rem 1rem;
+    transition: all 1s;
+    border-radius: 5px;
+}
+.navbar .navbar-nav li a:hover{
+    background: rgba(172, 104, 64, 0.516);
+}
+.navbar li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    letter-spacing: 5px;
+}
+.header__nav .ul__index li a:hover {
+    background: rgba(172, 104, 64, 0.516);
+}
+.main__index{
+	grid-area: main;
+    background-image: url(https://fondosmil.com/fondo/15482.jpg);
+}
+.d-block{
+    width: 70%;
+    height: 100%;
+}
+.footer__index{
+	grid-area: footer;
+    background-color: rgb(177, 92, 60);
+	background: linear-gradient(0deg, rgb(193, 110, 54) 0%, rgb(227, 227, 227) 90%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.p__footer{
+    color: black;
+    text-shadow: rgb(120, 120, 120) -0.1em 0.1em 0.1em;
+	font-size: 1.2rem;
+}
+.mb-3 {
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+}
